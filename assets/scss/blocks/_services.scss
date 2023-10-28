@@ -1,0 +1,146 @@
+.services {
+    padding: 50px 0;
+
+    &__text {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    & .price__title {
+        text-align: center;
+        font-size: 38px;
+        margin: 30px 0 0;
+        font-weight: bold;
+    }
+
+    .services__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px 40px;
+
+        &--relax {
+            display: flex;
+            align-items: center;
+
+            & li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & span {}
+
+                & svg {
+                    width: 100px;
+                    height: 100px;
+                    fill: $dark-blue;
+                }
+
+                & .services__title {
+                    margin: 10px 0;
+                }
+
+                & p {
+                    text-align: center;
+                }
+            }
+        }
+
+        &--single {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px 40px;
+        }
+
+        &--header {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            & li {
+                font-size: 18px;
+                font-weight: bold;
+                padding: 20px 0;
+                text-transform: uppercase;
+
+                &:first-child {
+                    grid-column: span 2;
+                }
+            }
+        }
+    }
+
+    .services__item {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border-bottom: 2px dotted $dark-blue;
+        padding: 0 0 10px 0;
+
+        &.--single {
+            display: flex;
+            align-items: center;
+
+            & .services__item--wrapper {
+                grid-column: span 1;
+            }
+
+            .services__price {
+                margin-left: auto;
+            }
+        }
+
+        &--wrapper {
+            display: flex;
+            align-items: center;
+            grid-column: span 2;
+        }
+    }
+
+    .json__icon {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+
+        path {
+            fill: $orange;
+            stroke: $orange;
+            fill: $dark-blue;
+            stroke: $dark-blue;
+        }
+
+
+    }
+
+    .services__title {
+        font-size: 18px;
+        font-weight: bold;
+        text-wrap: pretty;
+    }
+
+    .timer {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: $orange;
+
+        & svg {
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+            fill: $orange;
+        }
+
+    }
+
+    .services__price {
+        font-size: 26px;
+        color: #EA5F00;
+    }
+
+    .button {
+        animation: none;
+        max-width: 250px;
+    }
+}

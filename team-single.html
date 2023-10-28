@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR. BARBER | MEN'S SPACE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/assets/images/header/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header header--black">
+        <div class="header__wrapper">
+            <a href="/" class="header__logo--link">
+                <img class="header__logo--img" src="assets/images/header/logo-white.png" alt="logo">
+            </a>
+            <div class="header__info">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="services.html" class="navigation__link">Услуги</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="team.html" class="navigation__link">Команда</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="store.html" class="navigation__link">Магазин</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="blog.html" class="navigation__link">Блог</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="gallery.html" class="navigation__link">Галерея</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="contacts.html" class="navigation__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__burger">
+                    <span class="scissors handle__right"></span>
+                    <span class="scissors"></span>
+                    <span class="scissors handle__left"></span>
+                </button>
+                <a href="#" class="header__cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+                        <path
+                            d="M7.73254 12.9152H7.73364L7.73639 12.915H20.4844C20.7982 12.915 21.0742 12.7249 21.1604 12.4495L23.9729 3.46138C24.0335 3.26763 23.991 3.05931 23.8583 2.89848C23.7253 2.73764 23.5175 2.64301 23.2969 2.64301H6.11096L5.60834 0.577737C5.53674 0.283993 5.25146 0.0750008 4.92188 0.0750008H0.703125C0.314758 0.0750008 0 0.362398 0 0.717007C0 1.07162 0.314758 1.35901 0.703125 1.35901H4.35791C4.4469 1.72498 6.76318 11.2424 6.89648 11.7899C6.14923 12.0865 5.625 12.7667 5.625 13.5571C5.625 14.619 6.57129 15.483 7.73438 15.483H20.4844C20.8727 15.483 21.1875 15.1957 21.1875 14.8411C21.1875 14.4864 20.8727 14.1991 20.4844 14.1991H7.73438C7.34674 14.1991 7.03125 13.911 7.03125 13.5571C7.03125 13.2036 7.34564 12.916 7.73254 12.9152ZM22.3647 3.92704L19.9539 11.6311H8.29834L6.42334 3.92704H22.3647Z"
+                            fill="white" />
+                        <path
+                            d="M7.03125 17.4091C7.03125 18.4711 7.97754 19.335 9.14062 19.335C10.3037 19.335 11.25 18.4711 11.25 17.4091C11.25 16.3471 10.3037 15.483 9.14062 15.483C7.97754 15.483 7.03125 16.3471 7.03125 17.4091ZM9.14062 16.767C9.52826 16.767 9.84375 17.0551 9.84375 17.4091C9.84375 17.763 9.52826 18.051 9.14062 18.051C8.75299 18.051 8.4375 17.763 8.4375 17.4091C8.4375 17.0551 8.75299 16.767 9.14062 16.767Z"
+                            fill="white" />
+                        <path
+                            d="M16.9688 17.4091C16.9688 18.4711 17.915 19.335 19.0781 19.335C20.2412 19.335 21.1875 18.4711 21.1875 17.4091C21.1875 16.3471 20.2412 15.483 19.0781 15.483C17.915 15.483 16.9688 16.3471 16.9688 17.4091ZM19.0781 16.767C19.4658 16.767 19.7812 17.0551 19.7812 17.4091C19.7812 17.763 19.4658 18.051 19.0781 18.051C18.6905 18.051 18.375 17.763 18.375 17.4091C18.375 17.0551 18.6905 16.767 19.0781 16.767Z"
+                            fill="white" />
+                    </svg>
+                    <span class="header__cart--num">9</span>
+                </a>
+                <div class="header__lang">
+                    <button class="header__lang--switch">
+                        UA
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
+                            <path d="M1 0.816002L7 6.816L13 0.816002" stroke="white" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <ul class="header__lang--list">
+                        <li class="header__lang--item">
+                            <a class="header__lang--link" href="#">UA</a>
+                        </li>
+                        <li class="header__lang--item">
+                            <a class="header__lang--link" href="#">EN</a>
+                        </li>
+                        <li class="header__lang--item">
+                            <a class="header__lang--link" href="#">RU</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li>
+                        <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            Команда
+                        </a>
+                    </li>
+                    <li>
+                        <span>Роман Саакян</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="barber">
+            <div class="container">
+                <div class="barber__wrapper">
+                    <img src="assets/images/barbers/img7.jpg" alt="">
+                    <div class="barber__desc">
+                        <h1 class="section__title">Роман Саакян</h1>
+                        <p class="barber__status">Старший Барбер</p>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="https://www.instagram.com/mr.barber.izmail/" class="social__link"
+                                    target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg>
+                                    mr.barber.izmail
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.instagram.com/mr.barber.izmail/" class="social__link"
+                                    target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                                    </svg>
+                                    mr.barber.izmail
+                                </a>
+                            </li>
+                        </ul>
+
+                        <button class="button">Записаться к барберу</button>
+                        <p class="barber__text">
+                            Роман просто Mr Barber тот человек который смог собрать всех этих классных мужчин в одном
+                            месте.
+                            После его стрижки вам не нужно думать об укладке, проснулся и пошёл, ты уже секси.
+                        </p>
+                        <blockquote>
+                            Тот выбор, который я
+                            сделал, был одним из лучших в моей жизни.
+                            Выбор заключался в том, что в какой-то момент я поменял вектор своей профессии и начал
+                            стричь.
+                            Я из тех, кто кайфует от того, что делает, поэтому и те, кого я стригу, кайфуют от конечного
+                            результата. Если не веришь - проверь😏
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <h2 class="section__title">Услуги</h2>
+                <ul class="services__list--single" id="services_list">
+                    <li class="services__item --single" id="scissors_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">МУЖСКАЯ СТРИЖКА</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            500&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="hairclipper_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">СТРИЖКА МАШИНКОЙ</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            500&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="beard_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">СТРИЖКА БОРОДЫ И УСОВ</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            300&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="camouflage_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">КАМУФЛЯЖ БОРОДЫ И УСОВ</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            300&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="camouflagehair_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">КАМУФЛЯЖ ВОЛОС</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            300&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="combo_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">КОМБО СТРИЖКА + БОРОДА</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    90 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            750&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="fatherson_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title"> ПАПА + СЫН</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            300&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="longhair_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title"> СТРИЖКА ДЛИННЫХ ВОЛОС</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            300&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="mustachehaircut_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">СТРИЖКА УСОВ</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            100&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="razor_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">КОРОЛЕВСКОЕ БРИТЬЕ</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            350&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="schildren_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">ДЕТСКАЯ СТРИЖКА</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    60 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            450&#8372;
+                        </div>
+                    </li>
+                    <li class="services__item --single" id="wax_hair_removal_bx">
+                        <div class="services__item--wrapper">
+                            <div class="json__icon"></div>
+                            <div class="services__desc">
+                                <h4 class="services__title">УДАЛЕНИЕ ВОЛОС ВОСКОМ</h4>
+                                <span class="timer">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    30 минут
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__price">
+                            150&#8372;
+                        </div>
+                    </li>
+                </ul>
+                <button class="button">Записаться к барберу</button>
+            </div>
+        </section>
+        <section class="galery">
+            <div class="container">
+                <h2 class="section__title">Галерея</h2>
+                <ul class="galery__list" id="galery__list">
+                    <li>
+                        <img src="assets/images/gall1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/gall2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/gall3.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <p class="footer_copy">© 2021 Brand All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

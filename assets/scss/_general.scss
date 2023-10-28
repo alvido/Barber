@@ -1,0 +1,193 @@
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+blockquote {
+    margin-top: 30px;
+    color: $white;
+    font-style: italic;
+    padding: 30px 20px;
+    position: relative;
+    background: $dark-blue;
+    border-radius: 20px;
+    z-index: -2;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+        background: url(../images/icon/quote-right-solid.svg) no-repeat center;
+        z-index: -1;
+    }
+}
+
+.section__title {
+    color: $dark-blue;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100px;
+        height: 4px;
+        background: #EA5F00;
+        border-radius: 2px;
+    }
+}
+
+.button {
+    margin: 60px auto 0;
+    min-width: 160px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: $dark-blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid $dark-blue;
+    padding: 15px;
+    cursor: pointer;
+    background: $transparent;
+    border-radius: 6px;
+    animation: shadowave 2s infinite;
+    transition: all .3s ease;
+
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 2px;
+        margin-right: 5px;
+        background-color: $dark-blue;
+        transition: all 0.3s ease;
+    }
+
+    &::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        margin-left: 5px;
+        background-color: $dark-blue;
+        transition: all 0.3s ease;
+    }
+
+    &:hover:before, 
+    &:hover:after {
+        width: 15px;
+        background-color: $orange;
+    }
+}
+
+@keyframes leftScissorsAnimation {
+
+    0%,
+    100% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(7deg);
+    }
+}
+
+@keyframes rightScissorsAnimation {
+
+    0%,
+    100% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(-7deg);
+    }
+}
+
+@keyframes jumpAnimation {
+    0% {
+        transform: translate(-50%, -9px);
+    }
+
+    50% {
+        transform: translate(-50%, -3px);
+    }
+
+    100% {
+        transform: translate(-50%, -9px);
+    }
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0%);
+        /* Начало анимации: справа за пределами видимости */
+    }
+
+    100% {
+        transform: translateX(-80%);
+        /* Конец анимации: слева за пределами видимости */
+    }
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        /* Начало анимации: справа за пределами видимости */
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        /* Конец анимации: слева за пределами видимости */
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        /* Конец анимации: слева за пределами видимости */
+    }
+}
+
+@keyframes shadowave {
+    0% {
+        box-shadow: 0 0 0 0 $dark-blue;
+    }
+    100% {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes orangewave {
+    0% {
+        box-shadow: 0 0 0 0 #EA5F00;
+    }
+    100% {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    }
+}

@@ -1,0 +1,66 @@
+.barber {
+    padding: 50px 0;
+}
+
+.barber__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & img {
+        max-width: 40%;
+        border-radius: 20px;
+    }
+}
+
+.barber__status {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.barber__desc {
+
+    max-width: 55%;
+
+    & button {
+        margin: 50px 0;
+        animation: none;
+    }
+
+    .barber__text {
+        font-size: 18px;
+    }
+}
+
+.social__list {
+    margin-top: 30px;
+
+    .social__item {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+     .social__link {
+        font-weight: bold;
+
+        &:hover {
+            color: $orange;
+
+            & svg {
+                fill: $orange;
+                scale: 1;
+            }
+        }
+
+        & svg {
+            fill: $dark-blue;
+            visibility: visible;
+            opacity: 1;margin-right: 5px;
+        }
+
+     } 
+}

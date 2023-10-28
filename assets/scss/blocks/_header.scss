@@ -1,0 +1,321 @@
+.header {
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 80px;
+
+    &--black {
+        background-color: $dark-blue;
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo--link {
+        transition: all .3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__logo--img {
+        width: 180px;
+        height: auto;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+
+.navigation {
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        padding-right: 50px;
+    }
+
+    &__link {
+        position: relative;
+        color: $white;
+        font-weight: 700;
+        /* 8.75% */
+        transition: all .3s ease;
+
+        &:hover {
+            color: $orange;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: $orange;
+            transition: all 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+.header__burger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s ease;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    &:hover .scissors{
+        background-color: $orange;
+    }
+
+    .scissors {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $white;
+        transition: all .3s ease;
+    }
+
+    &.active {
+        transition: all .3s ease;
+
+        & .handle-left {
+            animation: leftScissorsAnimation 1.5s ease-in-out infinite;
+        }
+
+        & .handle-right {
+            animation: rightScissorsAnimation 1.5s ease-in-out infinite;
+        }
+
+        .rivet {
+            position: absolute;
+            left: 60%;
+            top: 60%;
+            transform: translate(-60%, -60%);
+            width: 3px;
+            height: 3px;
+            background-color: $orange;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .handle-left,
+        .handle-right {
+            position: absolute;
+            height: 3px;
+            top: 50%;
+            left: -5%;
+            transform-origin: calc(50% + 4px) center;
+        }
+
+        .handle-left {
+            background-color: $lite-gray;
+            border-radius: 100% 0 0 0%;
+            transform: rotate(30deg);
+        }
+
+        .handle-right {
+            background-color: $gray;
+            border-radius: 0px 0 0% 100%;
+            transform: rotate(-30deg);
+        }
+
+        .handle-left::before,
+        .handle-right::before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -8px;
+            width: 10px;
+            height: 6px;
+            border: 2px solid $orange;
+            border-radius: 50%;
+            background: transparent;
+        }
+
+        .handle-left::before {
+            top: -1px;
+        }
+
+        .handle-right::before {
+            bottom: -1px;
+        }
+    }
+}
+
+
+
+.header__cart {
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+
+    // & svg{
+    //     transform: scale(1.2);
+    // }
+
+    & path {
+        transition: all .3s ease;
+    }
+
+    &:hover path {
+        fill: $orange;
+    }
+
+    &--num {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: $white;
+        border-radius: 50%;
+        color: $dark-blue;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        transform: rotateY(0deg);
+        transition: all 1s ease;
+    }
+
+    &:hover &--num {
+        transform: rotateY(360deg);
+        background-color: $orange;
+        color: $white;
+    }
+}
+
+.header__lang {
+    position: relative;
+
+    &--switch {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        background: transparent;
+        color: $white;
+        transition: all .3s ease;
+        font-weight: 700;
+        cursor: pointer;
+
+        &.active {
+            color: $orange;
+        }
+
+        &.active svg {
+            transform: rotate(180deg);
+        }
+
+        &.active path {
+            stroke: $orange;
+        }
+
+        & svg {
+            margin-left: 5px;
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            color: $orange;
+        }
+
+        & path {
+            transition: all .3s ease;
+        }
+
+        &:hover path {
+            stroke: $orange;
+        }
+    }
+
+    &--list {
+        @include flex;
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: -10px;
+        right: 0;
+        padding: 0px;
+        height: 0;
+        transform: translateY(10px);
+        background: $white;
+        overflow: hidden;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: all .3s ease;
+
+        &.active {
+            padding: 10px;
+            height: auto;
+        }
+    }
+
+    &--item {
+        margin-bottom: 5px;
+    }
+
+    &--item:last-child {
+        margin-bottom: 0px;
+    }
+
+    &--link {
+        color: $dark-blue;
+        font-weight: 700;
+        display: block;
+        transition: all 0.3s ease;
+        position: relative;
+
+        &:hover {
+            color: $orange;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: $orange;
+            transition: all 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

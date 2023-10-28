@@ -1,0 +1,47 @@
+.product {
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px 20px;
+    }
+
+    &__item {}
+
+    &__link {
+        display: flex;
+        align-items: flex-start;
+        transition: all .3s ease;
+        height: 150px;
+
+        & img {
+            max-height: 150px;
+            width: 40%;
+            object-fit: contain;
+            transition: all .3s ease;
+            translate: 50% 0;
+        }
+
+        &:hover {
+            scale: 1.1;
+            & img {
+                translate: 0% 0;
+            }
+        }
+    }
+
+    &__desc {
+        width: 60%;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: stretch;
+        background-color: $white;
+        z-index: 1;
+    }
+
+    &__price {
+        color: $orange;
+    }
+}

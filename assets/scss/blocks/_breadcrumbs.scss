@@ -1,0 +1,64 @@
+.breadcrumbs {
+    margin-top: 80px;
+    padding: 50px 0 0;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    align-items: center;
+
+    & li {
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    & li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-weight: bold;
+        line-height: 24px;
+        transition: all .3s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: #EA5F00;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        & svg {
+            width: 24px;
+            height: 24px;
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            color: $orange;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        &:hover svg {
+            fill: $orange;
+        }
+    }
+
+    & li span {
+        color: $orange;
+        font-weight: bold;
+    }
+}
