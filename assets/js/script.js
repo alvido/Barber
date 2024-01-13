@@ -97,25 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 
 
-// animation partners
-document.addEventListener("DOMContentLoaded", function () {
-  // Находим список с классом '.partners__list'
-  const partnersList = document.querySelector('.partners__list');
-
-  // Находим элемент с классом '.partners__wrap'
-  const originalWrap = document.querySelector('.partners__wrap');
-
-  // Если оба элемента существуют
-  if (partnersList && originalWrap) {
-    // Создаем глубокую копию списка
-    const clonedList = partnersList.cloneNode(true);
-
-    // Вставляем копию списка в элемент с классом '.partners__wrap'
-    originalWrap.appendChild(clonedList);
-  }
-});
-// Ожидаем загрузку DOM
-
 
 // Slider
 $(document).ready(function () {
@@ -137,8 +118,6 @@ $(document).ready(function () {
           breakpoint: 560,
           settings: {
             arrows: false,
-            variableWidth: false,
-            centerMode: false,
           }
         }
       ]

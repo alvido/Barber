@@ -11,6 +11,12 @@
     justify-content: $content;
 }
 
+@mixin monitor{
+    @media (max-width: $monitor-width) {
+        @content;
+    }
+}
+
 @mixin desktop{
     @media (max-width: $desktop-width) {
         @content;

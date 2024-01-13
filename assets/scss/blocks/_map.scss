@@ -1,8 +1,20 @@
 .map {
 
-    padding: 50px 0;
+    margin-top: 50px;
+
+    @include mobile {
+        margin-top: 30px;
+    }
     
     &__frame {
         display: block;
+
+        @include mobile {
+            height: 400px;
+        }
+
+        @include phone {
+            height: 300px;
+        }
     }
 }
