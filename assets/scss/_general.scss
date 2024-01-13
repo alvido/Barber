@@ -19,35 +19,16 @@ body {
     margin: 0 auto;
 }
 
-blockquote {
-    margin-top: 30px;
-    color: $white;
-    font-style: italic;
-    padding: 30px 20px;
-    position: relative;
-    background: $dark-blue;
-    border-radius: 20px;
-    z-index: -2;
-
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        width: 80px;
-        height: 80px;
-        background: url(../images/icon/quote-right-solid.svg) no-repeat center;
-        z-index: -1;
-    }
-}
-
 .section__title {
     color: $dark-blue;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 30px;
     position: relative;
+
+    @include laptop {
+        font-size: clamp(1.875rem, 1.346rem + 2.65vw, 3rem);
+    }
 
     &::after {
         content: '';
@@ -104,90 +85,5 @@ blockquote {
     &:hover:after {
         width: 15px;
         background-color: $orange;
-    }
-}
-
-@keyframes leftScissorsAnimation {
-
-    0%,
-    100% {
-        transform: rotate(30deg);
-    }
-
-    50% {
-        transform: rotate(7deg);
-    }
-}
-
-@keyframes rightScissorsAnimation {
-
-    0%,
-    100% {
-        transform: rotate(-30deg);
-    }
-
-    50% {
-        transform: rotate(-7deg);
-    }
-}
-
-@keyframes jumpAnimation {
-    0% {
-        transform: translate(-50%, -9px);
-    }
-
-    50% {
-        transform: translate(-50%, -3px);
-    }
-
-    100% {
-        transform: translate(-50%, -9px);
-    }
-}
-
-@keyframes scrollAnimation {
-    0% {
-        transform: translateX(0%);
-        /* Начало анимации: справа за пределами видимости */
-    }
-
-    100% {
-        transform: translateX(-80%);
-        /* Конец анимации: слева за пределами видимости */
-    }
-}
-
-@keyframes pulseAnimation {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        /* Начало анимации: справа за пределами видимости */
-    }
-
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-        /* Конец анимации: слева за пределами видимости */
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        /* Конец анимации: слева за пределами видимости */
-    }
-}
-
-@keyframes shadowave {
-    0% {
-        box-shadow: 0 0 0 0 $dark-blue;
-    }
-    100% {
-        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
-    }
-}
-
-@keyframes orangewave {
-    0% {
-        box-shadow: 0 0 0 0 #EA5F00;
-    }
-    100% {
-        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
     }
 }

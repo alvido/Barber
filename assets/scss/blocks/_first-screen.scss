@@ -13,6 +13,9 @@
     }
 
     &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 78px;
         font-weight: 700;
         color: $dark-blue;
@@ -21,9 +24,14 @@
         left: 50%;
         z-index: 1;
         text-shadow: -0px 0px 10px $orange;
+        white-space: nowrap;
 
         transform: translate(-50%, -50%);
-        animation: pulseAnimation 8s infinite ease;
+        // animation: pulseAnimation 8s infinite ease;
+
+        @include laptop {
+            font-size: clamp(2.25rem, 1.015rem + 6.18vw, 4.875rem);
+        }
 
         & span {
             display: block;
@@ -31,6 +39,10 @@
             font-size: 38px;
             text-align: center;
             letter-spacing: 10px;
+
+            @include laptop {
+                font-size: clamp(0.625rem, -0.199rem + 4.12vw, 2.375rem);
+            }
         }
     }
 
@@ -51,6 +63,16 @@
             height: 50px;
             border-radius: 20px;
             margin-bottom: 10px;
+
+            @include laptop {
+                height: 30px;
+                width: 2px;
+                border: none;
+                background: $white;
+                animation: jumpAnimation 1s infinite ease;
+                margin-bottom: 0;
+
+            }
         }
 
         &::before {
@@ -63,6 +85,15 @@
             transform: translate(-50%, -6px);
             background-color: $white;
             animation: jumpAnimation 1s infinite ease;
+        }
+
+        @include laptop {
+
+            font-size: 12px;
+
+            &::before {
+                display: none;
+            }
         }
     }
 

@@ -1,25 +1,55 @@
 .about {
     padding: 50px 0;
 
+    @include mobile {
+        padding: 30px 0;
+    }
+
     &__wrapper {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         align-items: center;
 
+        @include ipad {
+            flex-direction: column;
+            gap: 20px;
+        }
+
         & img {
             max-width: 45%;
+
+            @include ipad {
+                max-width: 320px;
+            }
         }
     }
 
     &__content {
         width: 50%;
+
+        @include ipad {
+            width: auto;
+
+            & .button {
+                margin-top: 30px;
+            }
+        }
     }
 
     &__text {
         margin-bottom: 20px;
         color: $dark-blue;
         font-size: 20px;
+        text-align: justify;
+
+        &:last-of-type {
+            margin: 0;
+        }
+
+        @include ipad {
+            font-size: clamp(0.875rem, 0.699rem + 0.88vw, 1.25rem);
+        }
 
         &:last-child{
             margin: 0;
